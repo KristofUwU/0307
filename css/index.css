@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Hanken Grotesk;
     font-size: 6vh;
-    color:white;
+    
 
 }
 
@@ -54,6 +54,17 @@ section .Great p{
     color:black;
     font-size: 3.5vh;
 }
-
+.dobozok{
+    color:black;
+    background-color: brown;
+    
+    
+}
+.left{
+    float: left;
+}
+.right{
+    float:right
+}
 
 @media screen and (min-width: 800px) {}
