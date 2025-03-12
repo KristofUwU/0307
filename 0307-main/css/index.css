@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Hanken ;
+    
+    
+
+}
+
+
+.container{
+    grid-template-columns: auto;
+    gap:10px;
+    margin: auto auto auto;
+}
+
+.Great{
+    background-image: linear-gradient( blue, purple);
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:white;
+}
+section .Great p{
+    font-size: 3vh;
+}
+#nagy{
+    margin-top: 3vh;
+    font-size: 4vh;
+}
+#szoveg{
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+}
+.circle{
+    margin-top: 3vh;
+    border-radius: 50vh;
+    border:30vw;
+    background-image: linear-gradient(blue, purple);
+    height:150px;
+    width:150px;
+    align-content: center;
+    margin-left: 34vw;
+    color:white;
+    font-size: 3vh;
+}
+
+.Summary{
+    margin: 10px 10px 10px;
+
+}
+#szoveg_2{
+    margin-left: 3vw;
+    color:black;
+    font-size: 2.5vh;
+}
+.dobozok{
+    color:black;
+    background-color: rgba(255, 103, 103, 0.301);
+    font-size: 2.8vh;
+    height:9vh;  
+    align-content: center; 
+    border-radius: 20px;
+}
+.doboz_2{
+    color:black;
+    background-color: rgba(255, 210, 61, 0.452);
+    font-size: 2.8vh;
+    height:9vh;  
+    align-content: center; 
+    border-radius: 20px;
+}
+.doboz_3{
+    color:black;
+    background-color: rgba(81, 255, 197, 0.452);
+    font-size: 2.8vh;
+    height:9vh;  
+    align-content: center; 
+    border-radius: 20px;
+}
+.doboz_4{
+    color:black;
+    background-color: rgba(95, 92, 253, 0.452);
+    font-size: 2.8vh;
+    height:9vh; 
+    align-content: center;
+    border-radius: 20px; 
+}
+.doboz_5{
+    margin-top: 10vw;
+    border-radius: 100px;
+    background-color: gray;
+    height: 10vh;
+    font-size: 5vh;
+    border-radius: 20px;
+    
+}
+.tartalom{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right
+}
+
+@media screen and (min-width: 600px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .circle{
+        margin-left: 19vw;
+    }
+    .Summary{
+        grid-column-start:2;
+        grid-column-end: 3; 
+        width: 100vw;
+    }
+}
