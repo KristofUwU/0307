@@ -13,7 +13,7 @@
     grid-template-columns: auto;
     gap:10px;
     margin: auto auto auto;
-    
+    z-index:2;
 }
 
 .Great{
@@ -22,7 +22,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color:white;
-    height: 44vh;
+    
 }
 section .Great p{
     font-size: 3vh;
@@ -44,15 +44,12 @@ section .Great p{
     height:180px;
     width:180px;
     align-content: center;
-    margin-left: 35%;
     color:white;
     font-size: 3vh;
+    margin: auto;
 }
 
-.Summary{
-    
 
-}
 #szoveg_2{
     margin-left: 3vw;
     color:black;
@@ -113,20 +110,33 @@ section .Great p{
 }
 
 @media screen and (min-width: 600px) {
+    body{
+        background-color: gray;
+    }
     .container{
         display: grid;
-        grid-template-areas: 
-        "Greate Greate Summary Summary"
-        "Greate Greate Summary Summary"
-        
-        ;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: ;
     }
     .Great{
-        grid-area: Greate;
+        grid-column-start:2;
+        grid-column-end:3;
+        align-content: center;
+        grid-row-start: 1;
+        grid-row-end:4 ;
+        z-index:1;
+    }
+    .circle{
+        margin: auto;
     }
     .Summary{
-        grid-area: Summary;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: white;
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end:4 ;  
     }
+    
 
 }
