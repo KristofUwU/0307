@@ -13,6 +13,7 @@
     grid-template-columns: auto;
     gap:10px;
     margin: auto auto auto;
+    
 }
 
 .Great{
@@ -21,6 +22,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color:white;
+    height: 44vh;
 }
 section .Great p{
     font-size: 3vh;
@@ -39,16 +41,16 @@ section .Great p{
     border-radius: 50vh;
     border:30vw;
     background-image: linear-gradient(blue, purple);
-    height:150px;
-    width:150px;
+    height:180px;
+    width:180px;
     align-content: center;
-    margin-left: 34vw;
+    margin-left: 35%;
     color:white;
     font-size: 3vh;
 }
 
 .Summary{
-    margin: 10px 10px 10px;
+    
 
 }
 #szoveg_2{
@@ -71,6 +73,7 @@ section .Great p{
     height:9vh;  
     align-content: center; 
     border-radius: 20px;
+    margin-top: 3%;
 }
 .doboz_3{
     color:black;
@@ -79,6 +82,7 @@ section .Great p{
     height:9vh;  
     align-content: center; 
     border-radius: 20px;
+    margin-top: 3%;
 }
 .doboz_4{
     color:black;
@@ -87,15 +91,16 @@ section .Great p{
     height:9vh; 
     align-content: center;
     border-radius: 20px; 
+    margin-top: 3%;
 }
 .doboz_5{
     margin-top: 10vw;
     border-radius: 100px;
     background-color: gray;
-    height: 10vh;
+    height: 8vh;
     font-size: 5vh;
     border-radius: 20px;
-    
+    margin-top: 3%;
 }
 .tartalom{
     text-align: center;
@@ -110,14 +115,18 @@ section .Great p{
 @media screen and (min-width: 600px) {
     .container{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+        "Greate Greate Summary Summary"
+        "Greate Greate Summary Summary"
+        
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .circle{
-        margin-left: 19vw;
+    .Great{
+        grid-area: Greate;
     }
     .Summary{
-        grid-column-start:2;
-        grid-column-end: 3; 
-        width: 100vw;
+        grid-area: Summary;
     }
+
 }
